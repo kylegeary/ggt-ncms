@@ -4,11 +4,11 @@ import Header from "./header"
 import Footer from "./footer"
 
 class Layout extends React.Component {
-  render({ children }) {
+  render() {
     return (
       <>
         <Header />
-        <main className="main">{children}</main>
+        <main className="main"></main>
         <Footer />
       </>
     )
