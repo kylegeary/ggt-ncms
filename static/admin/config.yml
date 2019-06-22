@@ -2,7 +2,10 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: static/img
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 7bd9fdbbcfc47d6f8ecd
 public_folder: /img
 
 collections:
@@ -16,5 +19,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }

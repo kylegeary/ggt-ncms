@@ -6,24 +6,24 @@ import Footer from "../components/footer"
 import Posts from "../components/posts"
 
 class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+	render() {
+		const { data } = this.props
+		const siteTitle = data.site.siteMetadata.title
+		const posts = data.allMarkdownRemark.edges
 
-    return (
-      <>
-        <div className="page-wrapper">
-          <Header />
-          <main className="main">
-            <FeaturedPost />
-            <Posts />
-          </main>
-        </div>
-        <Footer />
-      </>
-    )
-  }
+		return (
+			<>
+				<div className="page-wrapper">
+					<Header />
+					<main className="main">
+						<FeaturedPost />
+						<Posts />
+					</main>
+				</div>
+				<Footer />
+			</>
+		)
+	}
 }
 
 export default BlogIndex
