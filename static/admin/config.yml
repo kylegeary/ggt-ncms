@@ -6,6 +6,12 @@ media_library:
   name: uploadcare
   config:
     publicKey: 7bd9fdbbcfc47d6f8ecd
+    multiple: false
+    tabs: "file camera url facebook gdrive gphotos"
+    effects: "crop,rotate,enhance,grayscale"
+    imageShrink: "2000x2000"
+    previewStep: true
+    clearable: true
 public_folder: /img
 
 collections:
